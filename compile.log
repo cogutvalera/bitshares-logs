@@ -16,6 +16,9 @@
 File "/home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/libraries/chain/include/graphene/chain/hardfork.hpp" up-to-date with .d directory
 [ 46%] Built target build_hardfork_hpp
 [ 62%] Built target graphene_chain
+Scanning dependencies of target graphene_utilities
+[ 62%] Building CXX object libraries/utilities/CMakeFiles/graphene_utilities.dir/git_revision.cpp.o
+[ 62%] Linking CXX static library libgraphene_utilities.a
 [ 64%] Built target graphene_utilities
 [ 66%] Built target graphene_net
 [ 67%] Built target graphene_debug_witness
@@ -24,8 +27,20 @@ File "/home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/librari
 [ 69%] Built target graphene_account_history
 [ 71%] Built target graphene_app
 [ 72%] Built target graphene_egenesis_none
+[ 73%] Linking CXX executable embed_genesis
 [ 73%] Built target embed_genesis
+[ 73%] Generating egenesis_brief.cpp, egenesis_full.cpp
+embed_genesis:  Reading genesis from file /home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/genesis.json
+
+embed_genesis:  parsing tmplsub parameter "/home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/libraries/egenesis/egenesis_brief.cpp.tmpl---/home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/libraries/egenesis/egenesis_brief.cpp"
+embed_genesis:  parsing tmplsub parameter "/home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/libraries/egenesis/egenesis_full.cpp.tmpl---/home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/libraries/egenesis/egenesis_full.cpp"
+Scanning dependencies of target graphene_egenesis_brief
+[ 74%] Building CXX object libraries/egenesis/CMakeFiles/graphene_egenesis_brief.dir/egenesis_brief.cpp.o
+[ 74%] Linking CXX static library libgraphene_egenesis_brief.a
 [ 74%] Built target graphene_egenesis_brief
+Scanning dependencies of target graphene_egenesis_full
+[ 75%] Building CXX object libraries/egenesis/CMakeFiles/graphene_egenesis_full.dir/egenesis_full.cpp.o
+[ 75%] Linking CXX static library libgraphene_egenesis_full.a
 [ 75%] Built target graphene_egenesis_full
 [ 75%] Built target graphene_witness
 [ 75%] Built target graphene_elasticsearch
@@ -33,19 +48,45 @@ File "/home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/librari
 [ 76%] Built target graphene_snapshot
 [ 77%] Built target graphene_es_objects
 [ 79%] Built target graphene_wallet
+[ 80%] Linking CXX executable member_enumerator
 [ 80%] Built target member_enumerator
+Scanning dependencies of target cli_wallet
+[ 80%] Building CXX object programs/cli_wallet/CMakeFiles/cli_wallet.dir/main.cpp.o
+In file included from /home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/libraries/db/include/graphene/db/object_database.hpp:27:0,
+                 from /home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/libraries/chain/include/graphene/chain/database.hpp:34,
+                 from /home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/libraries/app/include/graphene/app/database_api.hpp:30,
+                 from /home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/libraries/app/include/graphene/app/api.hpp:26,
+                 from /home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/programs/cli_wallet/main.cpp:39:
+/home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/libraries/db/include/graphene/db/undo_database.hpp: In destructor ‘graphene::db::undo_database::session::~session()’:
+/home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/libraries/db/include/graphene/db/undo_database.hpp:69:22: warning: throw will always call terminate() [-Wterminate]
+                      throw; // maybe crash..
+                      ^~~~~
+/home/valera/Projects/Blockchain/Graphene/BitShares/bitshares-core/libraries/db/include/graphene/db/undo_database.hpp:69:22: note: in C++11 destructors default to noexcept
+[ 80%] Linking CXX executable cli_wallet
 [ 80%] Built target cli_wallet
+[ 80%] Linking CXX executable get_dev_key
 [ 80%] Built target get_dev_key
 [ 81%] Built target convert_address
+[ 82%] Linking CXX executable genesis_update
 [ 82%] Built target genesis_update
+[ 83%] Linking CXX executable witness_node
 [ 83%] Built target witness_node
+[ 84%] Linking CXX executable delayed_node
 [ 84%] Built target delayed_node
+[ 84%] Linking CXX executable js_operation_serializer
 [ 84%] Built target js_operation_serializer
 [ 85%] Built target size_checker
+[ 86%] Linking CXX executable performance_test
 [ 86%] Built target performance_test
+[ 86%] Linking CXX executable chain_test
 [ 95%] Built target chain_test
+[ 95%] Linking CXX executable chain_bench
 [ 96%] Built target chain_bench
+[ 97%] Linking CXX executable cli_test
 [ 97%] Built target cli_test
+[ 98%] Linking CXX executable app_test
 [ 98%] Built target app_test
+[ 99%] Linking CXX executable es_test
 [ 99%] Built target es_test
+[ 99%] Linking CXX executable generate_empty_blocks
 [100%] Built target generate_empty_blocks
